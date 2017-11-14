@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DB8239081FBA2F4C0051963C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8239071FBA2F4C0051963C /* AppDelegate.swift */; };
-		DB82390A1FBA2F4C0051963C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8239091FBA2F4C0051963C /* ViewController.swift */; };
+		DB82390A1FBA2F4C0051963C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8239091FBA2F4C0051963C /* LoginViewController.swift */; };
 		DB82390D1FBA2F4C0051963C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB82390B1FBA2F4C0051963C /* Main.storyboard */; };
 		DB8239101FBA2F4C0051963C /* PetHealth.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DB82390E1FBA2F4C0051963C /* PetHealth.xcdatamodeld */; };
 		DB8239121FBA2F4C0051963C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB8239111FBA2F4C0051963C /* Assets.xcassets */; };
@@ -18,7 +18,7 @@
 /* Begin PBXFileReference section */
 		DB8239041FBA2F4C0051963C /* PetHealth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetHealth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB8239071FBA2F4C0051963C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DB8239091FBA2F4C0051963C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DB8239091FBA2F4C0051963C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		DB82390C1FBA2F4C0051963C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DB82390F1FBA2F4C0051963C /* PetHealth.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PetHealth.xcdatamodel; sourceTree = "<group>"; };
 		DB8239111FBA2F4C0051963C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -79,7 +79,7 @@
 		DB82391D1FBA2F720051963C /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				DB8239091FBA2F4C0051963C /* ViewController.swift */,
+				DB8239091FBA2F4C0051963C /* LoginViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -163,7 +163,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB82390A1FBA2F4C0051963C /* ViewController.swift in Sources */,
+				DB82390A1FBA2F4C0051963C /* LoginViewController.swift in Sources */,
 				DB8239081FBA2F4C0051963C /* AppDelegate.swift in Sources */,
 				DB8239101FBA2F4C0051963C /* PetHealth.xcdatamodeld in Sources */,
 			);
