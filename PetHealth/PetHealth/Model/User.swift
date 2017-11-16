@@ -38,7 +38,7 @@ class User {
     static func from(jsonUsers: [JSON]) -> [User] {
         var users: [User] = []
         let count = jsonUsers.count
-        for i in 0...count {
+        for i in 0...count - 1 {
             users.append(User.init(from: jsonUsers[i]))
         }
         return users
