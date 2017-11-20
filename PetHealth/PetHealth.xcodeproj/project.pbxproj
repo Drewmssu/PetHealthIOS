@@ -11,6 +11,8 @@
 		DAC2006D1FC33A7A00E6C895 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DAC2005F1FC33A7200E6C895 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DAC200711FC33A7E00E6C895 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAC200461FC33A6C00E6C895 /* SwiftyJSON.framework */; };
 		DAC200721FC33A7E00E6C895 /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DAC200461FC33A6C00E6C895 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DAC200761FC33F4500E6C895 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC200751FC33F4500E6C895 /* SignupViewController.swift */; };
+		DAC200781FC342B800E6C895 /* PetHealthApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC200771FC342B800E6C895 /* PetHealthApiService.swift */; };
 		DB8239081FBA2F4C0051963C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8239071FBA2F4C0051963C /* AppDelegate.swift */; };
 		DB82390A1FBA2F4C0051963C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8239091FBA2F4C0051963C /* LoginViewController.swift */; };
 		DB82390D1FBA2F4C0051963C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB82390B1FBA2F4C0051963C /* Main.storyboard */; };
@@ -156,6 +158,8 @@
 /* Begin PBXFileReference section */
 		DAC2003A1FC33A6B00E6C895 /* SwiftyJSON.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftyJSON.xcodeproj; path = ../../SwiftyJSON/SwiftyJSON.xcodeproj; sourceTree = "<group>"; };
 		DAC200531FC33A7200E6C895 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = ../../Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
+		DAC200751FC33F4500E6C895 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		DAC200771FC342B800E6C895 /* PetHealthApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PetHealthApiService.swift; path = PetHealth/ViewController/PetHealthApiService.swift; sourceTree = SOURCE_ROOT; };
 		DB8239041FBA2F4C0051963C /* PetHealth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetHealth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB8239071FBA2F4C0051963C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DB8239091FBA2F4C0051963C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -260,6 +264,7 @@
 			isa = PBXGroup;
 			children = (
 				DB8239091FBA2F4C0051963C /* LoginViewController.swift */,
+				DAC200751FC33F4500E6C895 /* SignupViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -267,6 +272,7 @@
 		DB82391E1FBA2F910051963C /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				DAC200771FC342B800E6C895 /* PetHealthApiService.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -459,8 +465,10 @@
 			files = (
 				DBBEF2271FBB6DEE00BE1E52 /* Pet.swift in Sources */,
 				DB82390A1FBA2F4C0051963C /* LoginViewController.swift in Sources */,
+				DAC200761FC33F4500E6C895 /* SignupViewController.swift in Sources */,
 				DBBEF2291FBB729A00BE1E52 /* User.swift in Sources */,
 				DBBEF1501FBB5E1900BE1E52 /* Tip.swift in Sources */,
+				DAC200781FC342B800E6C895 /* PetHealthApiService.swift in Sources */,
 				DBAFD7F51FBE1FEE00B73C13 /* Person.swift in Sources */,
 				DB8239081FBA2F4C0051963C /* AppDelegate.swift in Sources */,
 				DB8239101FBA2F4C0051963C /* PetHealth.xcdatamodeld in Sources */,
@@ -615,7 +623,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 8468U436K8;
 				INFOPLIST_FILE = PetHealth/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -632,7 +640,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 8468U436K8;
 				INFOPLIST_FILE = PetHealth/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
