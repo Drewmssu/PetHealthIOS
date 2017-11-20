@@ -96,7 +96,7 @@
                                     <segue destination="82d-zd-hAJ" kind="show" id="s1K-Iv-X1G"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PetHealthLogo" translatesAutoresizingMaskIntoConstraints="NO" id="g10-Mo-WWX">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PetHealthLogo" translatesAutoresizingMaskIntoConstraints="NO" id="g10-Mo-WWX">
                                 <rect key="frame" x="76" y="93" width="223" height="211"/>
                             </imageView>
                         </subviews>
