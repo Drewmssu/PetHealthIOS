@@ -13,19 +13,18 @@ import SwiftyJSON
 
 class SignUpViewController: UIViewController {
     
-    
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
     @IBAction func doneButtonTouchUpInside(_ sender: Any) {
-        if (usernameTextField.hasText && passwordTextField.hasText && emailTextField.hasText){
+    if (usernameTextField.hasText && passwordTextField.hasText && emailTextField.hasText){
             sendUser()
             let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
             let newViewController = storyBoard.instantiateViewController(withIdentifier: "LoginScene")
             self.present(newViewController,animated: true, completion: nil)
         }
-        
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
