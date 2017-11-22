@@ -24,42 +24,19 @@ class LoginViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    public enum HTTPMethod: String {
-        case options = "OPTIONS"
-        case get     = "GET"
-        case head    = "HEAD"
-        case post    = "POST"
-        case put     = "PUT"
-        case patch   = "PATCH"
-        case delete  = "DELETE"
-        case trace   = "TRACE"
-        case connect = "CONNECT"
-    }
-    
-    func attemptLogin() -> Bool {
-        var pass = false
-        let parameters: Parameters = [
-            "username": usernameTextField.text!,
-            "password": passwordTextField.text!
-        ]
-        Alamofire.request(PetHealthApiService.LOGIN_URL, method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: nil)
-            .responseJSON(completionHandler: {
-                response in
-                switch response.result {
-                case .success(let value):
-                    let json = JSON(value)
-                    print("\(json)")
-                    pass = true
-                
-                case .failure(let error):
-                    print("\(error)")
-                    pass = false
-                }
-        })
-        return pass
-    }
-    
     @IBAction func loginButtonTapped(_ sender: Any) {
+        guard let username = usernameTextField.text, !username.isEmpty else { return }
+        guard let password = passwordTextField.text, !password.isEmpty else { return }
+        
+        API.login(username: username, password: password) { (error: Error?, succes: Bool) in
+            if succes {
+                
+            }
+            else {
+                
+            }
+        }
+        
     }
     
     
