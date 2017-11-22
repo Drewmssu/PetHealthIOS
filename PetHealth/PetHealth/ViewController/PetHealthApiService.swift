@@ -11,7 +11,7 @@ import Foundation
 public class PetHealthApiService {
     static let PET_URL: String = "http://pethealth.azurewebsites.net/user/pets";
     static let TIP_URL: String = "http://pethealth.azurewebsites.net/tips";
-    static let LOGIN_URL: String = "https://pethealth.azurewebsites.net/user/login";
+    static let LOGIN_URL: String = "http://pethealth.azurewebsites.net/user/login";
     static let DOCTYPE_URL: String = "http://pethealth.azurewebsites.net/documenttype";
     static let SIGNUP_USER: String = "http://pethealth.azurewebsites.net/user/register";
     static let SIGNUP_CUSTOMER: String = "http://pethealth.azurewebsites.net/user/registerCustomer";
