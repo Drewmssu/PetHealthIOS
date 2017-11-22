@@ -28,8 +28,8 @@ class LoginViewController: UIViewController {
         guard let username = usernameTextField.text, !username.isEmpty else { return }
         guard let password = passwordTextField.text, !password.isEmpty else { return }
         
-        API.login(username: username, password: password) { (error: Error?, succes: Bool) in
-            if succes {
+        API.login(username: username, password: password) { (error: Error?, success: Bool) in
+            if success {
                 
             }
             else {

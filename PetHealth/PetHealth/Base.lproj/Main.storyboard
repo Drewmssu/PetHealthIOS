@@ -26,23 +26,23 @@
                                     <segue destination="3th-4R-fqT" kind="show" id="SOj-3j-01h"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your password here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2ck-o7-BNO">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2ck-o7-BNO">
                                 <rect key="frame" x="16" y="415" width="343" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="3vj-Ea-Y1B"/>
                                 </constraints>
                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" textContentType="password"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES" textContentType="password"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your username here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jyb-yQ-GYJ">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jyb-yQ-GYJ">
                                 <rect key="frame" x="16" y="341" width="343" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="yCX-pa-fwO"/>
                                 </constraints>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" textContentType="username"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" textContentType="username"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xKD-Yg-9wC">
                                 <rect key="frame" x="16" y="312" width="83" height="21"/>
@@ -93,7 +93,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Sign In"/>
                                 <connections>
-                                    <action selector="loginAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bA9-xm-Jz4"/>
                                     <action selector="loginButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jrC-Vn-yJC"/>
                                 </connections>
                             </button>
@@ -134,8 +133,8 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="passwordTextField" destination="2ck-o7-BNO" id="iLT-vx-VFj"/>
-                        <outlet property="usernameTextField" destination="Jyb-yQ-GYJ" id="xeW-tl-ATo"/>
+                        <outlet property="passwordTextField" destination="2ck-o7-BNO" id="oIh-aY-Ixg"/>
+                        <outlet property="usernameTextField" destination="Jyb-yQ-GYJ" id="cNg-2a-dQ0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -205,7 +204,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="nf3-u1-32C" firstAttribute="trailing" secondItem="1rN-pS-GGz" secondAttribute="trailing" id="17F-YR-AIM"/>
                             <constraint firstItem="1rN-pS-GGz" firstAttribute="trailing" secondItem="IXN-EB-Fh8" secondAttribute="trailing" id="2Pq-32-Su1"/>
@@ -244,7 +243,7 @@
             </objects>
             <point key="canvasLocation" x="908" y="112.89355322338831"/>
         </scene>
-        <!--Pets-->
+        <!--Notifications-->
         <scene sceneID="Liz-Gg-4XY">
             <objects>
                 <viewController id="kxh-am-Jax" sceneMemberID="viewController">
@@ -254,28 +253,27 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="e58-DP-B40"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Pets" id="ewD-U8-Nlx"/>
+                    <tabBarItem key="tabBarItem" title="Notifications" id="ewD-U8-Nlx"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oi7-Ut-KxE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="937" y="1746"/>
         </scene>
-        <!--Home-->
-        <scene sceneID="cZG-nX-9aZ">
+        <!--Chat-->
+        <scene sceneID="zOz-63-z7X">
             <objects>
-                <viewController id="PLP-hY-obr" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="78p-GY-I72">
+                <viewController id="Qsx-qn-qme" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CmT-aK-xJL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="kUa-Wi-28H"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="WKV-TE-vA8"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" id="mLQ-Cn-zlA"/>
-                    <navigationItem key="navigationItem" id="W19-JY-PUU"/>
+                    <tabBarItem key="tabBarItem" title="Chat" id="U6J-WQ-Krs"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="SkD-j2-DZr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tTH-R5-q1c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-980" y="1746"/>
+            <point key="canvasLocation" x="1772" y="1746"/>
         </scene>
         <!--Pets-->
         <scene sceneID="oHb-b8-N8e">
@@ -316,7 +314,7 @@
         <!--Navigation Controller-->
         <scene sceneID="cTT-pq-KAP">
             <objects>
-                <navigationController id="boC-B1-8DX" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="main" id="boC-B1-8DX" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="CK7-qx-Rix">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -340,14 +338,87 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="PLP-hY-obr" kind="relationship" relationship="viewControllers" id="Qth-Uq-iE5"/>
                         <segue destination="xfE-8T-BeF" kind="relationship" relationship="viewControllers" id="8PL-86-W92"/>
                         <segue destination="kxh-am-Jax" kind="relationship" relationship="viewControllers" id="qnm-bz-kl1"/>
+                        <segue destination="Qsx-qn-qme" kind="relationship" relationship="viewControllers" id="q0T-AG-L1G"/>
+                        <segue destination="4fP-LA-JRX" kind="relationship" relationship="viewControllers" id="QXO-jc-7GV"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oCm-3s-ZBJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="908" y="887"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="kGk-cz-GYT">
+            <objects>
+                <collectionViewController title="Home" id="4fP-LA-JRX" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="vyH-0v-NsN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="BQq-Jb-LeP">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="IBY-Yw-VPf">
+                                <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                    <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </view>
+                                <size key="customSize" width="150" height="150"/>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="4fP-LA-JRX" id="roT-TD-Ktp"/>
+                            <outlet property="delegate" destination="4fP-LA-JRX" id="4uy-oE-HTK"/>
+                        </connections>
+                    </collectionView>
+                    <tabBarItem key="tabBarItem" title="Home" id="l9d-VY-3Wq"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PCz-KD-JtU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-820" y="1746"/>
+        </scene>
+        <!--Pets-->
+        <scene sceneID="Khi-pB-O0h">
+            <objects>
+                <collectionViewController id="lg7-hz-MSY" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="HgI-7z-2fi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="n4J-Xu-iUn">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="Fua-FH-XP9">
+                                <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                    <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </view>
+                                <size key="customSize" width="150" height="150"/>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="lg7-hz-MSY" id="pcg-tp-jxf"/>
+                            <outlet property="delegate" destination="lg7-hz-MSY" id="FZV-Og-aYf"/>
+                        </connections>
+                    </collectionView>
+                    <tabBarItem key="tabBarItem" title="Pets" id="8PI-aI-05z"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FuR-TS-sSc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-38" y="1746"/>
         </scene>
     </scenes>
     <resources>

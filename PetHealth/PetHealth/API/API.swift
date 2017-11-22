@@ -30,11 +30,13 @@ class API: NSObject {
                     
                 case .success(let value):
                     let json = JSON(value)
-                    let res = value as! NSDictionary
-                    var user = User.init(from: json)
-                    print("\(json)")
-                    print("\(user)")
-                    completion(nil, true)
+                    if let userId = json["userLog"]["userId"].int {
+                        print("userId: \(userId)")
+                        
+                        Helper.saveUser(userId: userId)
+                        
+                        completion(nil, true)
+                    }
                 }
             })
     }

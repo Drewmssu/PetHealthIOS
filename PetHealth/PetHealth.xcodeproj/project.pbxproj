@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F33FA691FC5FB4400B84C1C /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F33FA681FC5FB4400B84C1C /* Helper.swift */; };
 		7FD153591FC5EA19000F15B7 /* PetHealthApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD153581FC5EA19000F15B7 /* PetHealthApiService.swift */; };
 		7FD1535B1FC5EA21000F15B7 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD1535A1FC5EA21000F15B7 /* API.swift */; };
 		7FD1538E1FC5ED34000F15B7 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FD153811FC5ED2E000F15B7 /* Alamofire.framework */; };
@@ -159,6 +160,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		7F33FA681FC5FB4400B84C1C /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		7FD153581FC5EA19000F15B7 /* PetHealthApiService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PetHealthApiService.swift; sourceTree = "<group>"; };
 		7FD1535A1FC5EA21000F15B7 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		7FD1535C1FC5ED28000F15B7 /* SwiftyJSON.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftyJSON.xcodeproj; path = ../../SwiftyJSON/SwiftyJSON.xcodeproj; sourceTree = "<group>"; };
@@ -193,6 +195,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7F33FA671FC5FABF00B84C1C /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				7F33FA681FC5FB4400B84C1C /* Helper.swift */,
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		7FD153561FC5E9B6000F15B7 /* API */ = {
 			isa = PBXGroup;
 			children = (
@@ -258,6 +268,7 @@
 		DB8239061FBA2F4C0051963C /* PetHealth */ = {
 			isa = PBXGroup;
 			children = (
+				7F33FA671FC5FABF00B84C1C /* New Group */,
 				7FD153571FC5E9DF000F15B7 /* Network */,
 				7FD153561FC5E9B6000F15B7 /* API */,
 				DB82391D1FBA2F720051963C /* ViewController */,
@@ -490,6 +501,7 @@
 				7FD1535B1FC5EA21000F15B7 /* API.swift in Sources */,
 				DB7B81B91FC389E500BF3060 /* PetCell.swift in Sources */,
 				DB7B81B71FC3888700BF3060 /* PetViewController.swift in Sources */,
+				7F33FA691FC5FB4400B84C1C /* Helper.swift in Sources */,
 				DB8239081FBA2F4C0051963C /* AppDelegate.swift in Sources */,
 				DB8239101FBA2F4C0051963C /* PetHealth.xcdatamodeld in Sources */,
 			);
