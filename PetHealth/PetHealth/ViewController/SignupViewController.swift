@@ -10,5 +10,5 @@ import Foundation
 import Alamofire
 
 func sendUser(){
-    Alamofire.request()
+    
 }
