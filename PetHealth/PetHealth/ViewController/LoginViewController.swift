@@ -29,12 +29,8 @@ class LoginViewController: UIViewController {
         guard let password = passwordTextField.text, !password.isEmpty else { return }
         
         API.login(username: username, password: password) { (error: Error?, success: Bool) in
-            if success {
-                
-            }
-            else {
-                
-            }
+            if success {}
+            else {}
         }
         
     }
