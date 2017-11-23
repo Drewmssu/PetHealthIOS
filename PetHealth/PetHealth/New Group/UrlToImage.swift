@@ -10,6 +10,8 @@ import UIKit
 import AlamofireImage
 
 class UrlToImage: NSObject {
-
-
+    static func urlToImage(forUrl urlString: String) -> String {
+        let url = URL(string: urlString)!
+        return "\(url)"
+    }
 }

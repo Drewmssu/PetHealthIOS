@@ -43,9 +43,11 @@ class TipViewController: UICollectionViewController {
     }
     */
     
+    /*
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         self.parent?.performSegue(withIdentifier: "showTip", sender: self)
     }
+    */
 }
 
 extension TipViewController {
@@ -112,7 +114,7 @@ extension TipViewController {
                     let json = JSON(value)
                     print("\(json)")
                     // Update Tips Data Collection
-                    self.tips = Tip.from(jsonTips: json["tips"].arrayValue)
+                    self.tips = Tip.from(jsonTips: json["content"].arrayValue)
                     // Refresh Collection View
                     self.collectionView?.reloadData()
                     self.collectionViewLayout.invalidateLayout()
