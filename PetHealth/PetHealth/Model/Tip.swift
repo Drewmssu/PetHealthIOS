@@ -9,23 +9,23 @@ import Foundation
 import SwiftyJSON
 
 class Tip {
-    var id: Int
-    var image: String
-    var title: String
+    var id: Int?
+    var imageUrl: String
+    var ownerName: String
     var description: String
     
     init() {
-        id = 0
-        image = ""
-        title = ""
+        id = nil
+        imageUrl = ""
+        ownerName = ""
         description = ""
     }
     
     init(from jsonTip: JSON) {
-        id = jsonTip["id"].intValue
-        image = jsonTip["image"].stringValue
-        title = jsonTip["title"].stringValue
-        description = jsonTip["description"].stringValue
+        id = jsonTip["TipId"].intValue
+        imageUrl = jsonTip["Image"].stringValue
+        ownerName = jsonTip["OwnerUserName"].stringValue
+        description = jsonTip["Content"].stringValue
     }
     
     static func from(jsonTips: [JSON]) -> [Tip] {

@@ -275,42 +275,6 @@
             </objects>
             <point key="canvasLocation" x="1772" y="1746"/>
         </scene>
-        <!--Pets-->
-        <scene sceneID="oHb-b8-N8e">
-            <objects>
-                <collectionViewController id="xfE-8T-BeF" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="n4n-js-wWy">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="CVC-YR-h3k">
-                            <size key="itemSize" width="50" height="50"/>
-                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                        </collectionViewFlowLayout>
-                        <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="aKn-75-6Wj">
-                                <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                    <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </view>
-                                <size key="customSize" width="150" height="150"/>
-                            </collectionViewCell>
-                        </cells>
-                        <connections>
-                            <outlet property="dataSource" destination="xfE-8T-BeF" id="7lB-jJ-LLf"/>
-                            <outlet property="delegate" destination="xfE-8T-BeF" id="QLj-CO-Czk"/>
-                        </connections>
-                    </collectionView>
-                    <tabBarItem key="tabBarItem" title="Pets" id="9Cx-b6-i1y"/>
-                </collectionViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="kpt-Zb-oS8" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-38" y="1746"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="cTT-pq-KAP">
             <objects>
@@ -338,10 +302,10 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="xfE-8T-BeF" kind="relationship" relationship="viewControllers" id="8PL-86-W92"/>
+                        <segue destination="4fP-LA-JRX" kind="relationship" relationship="viewControllers" id="QXO-jc-7GV"/>
                         <segue destination="kxh-am-Jax" kind="relationship" relationship="viewControllers" id="qnm-bz-kl1"/>
                         <segue destination="Qsx-qn-qme" kind="relationship" relationship="viewControllers" id="q0T-AG-L1G"/>
-                        <segue destination="4fP-LA-JRX" kind="relationship" relationship="viewControllers" id="QXO-jc-7GV"/>
+                        <segue destination="lg7-hz-MSY" kind="relationship" relationship="viewControllers" id="2CM-gw-jdd"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oCm-3s-ZBJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -351,7 +315,7 @@
         <!--Home-->
         <scene sceneID="kGk-cz-GYT">
             <objects>
-                <collectionViewController title="Home" id="4fP-LA-JRX" sceneMemberID="viewController">
+                <collectionViewController title="Home" id="4fP-LA-JRX" customClass="TipViewController" customModule="PetHealth" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="vyH-0v-NsN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -363,7 +327,7 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="IBY-Yw-VPf">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="IBY-Yw-VPf" customClass="TipCell" customModule="PetHealth" customModuleProvider="target">
                                 <rect key="frame" x="37.5" y="0.0" width="300" height="200"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -391,6 +355,11 @@
                                     </subviews>
                                 </view>
                                 <size key="customSize" width="300" height="200"/>
+                                <connections>
+                                    <outlet property="descriptionLabel" destination="3d8-ma-GBl" id="qoi-qC-OSE"/>
+                                    <outlet property="postedByLabel" destination="7ZR-78-ol1" id="QVD-jh-vxK"/>
+                                    <outlet property="tipImageView" destination="CEe-h0-cPg" id="b4d-op-3IS"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
@@ -419,7 +388,7 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="Fua-FH-XP9">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="Fua-FH-XP9" customClass="PetCell" customModule="PetHealth" customModuleProvider="target">
                                 <rect key="frame" x="37.5" y="0.0" width="300" height="200"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
