@@ -156,7 +156,15 @@
                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </textAttributes>
                                 <items>
-                                    <navigationItem title="Sign Up" id="G8g-ds-l18"/>
+                                    <navigationItem title="Sign Up" id="G8g-ds-l18">
+                                        <barButtonItem key="leftBarButtonItem" title="Item" image="Back Button" id="x5T-84-Wfj">
+                                            <inset key="largeContentSizeImageInsets" minX="-29" minY="-1" maxX="0.0" maxY="0.0"/>
+                                            <color key="tintColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                            <connections>
+                                                <action selector="backButtonAction:" destination="3th-4R-fqT" id="Sjc-Fv-lFD"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
                                 </items>
                             </navigationBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MRl-KE-DIc">
@@ -282,6 +290,10 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="CK7-qx-Rix">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.43750962450000003" green="0.0080511025139999998" blue="0.73606043779999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="82d-zd-hAJ" kind="relationship" relationship="rootViewController" id="ab5-hG-6Vd"/>
@@ -291,11 +303,15 @@
             </objects>
             <point key="canvasLocation" x="140" y="887"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--PetHealth-->
         <scene sceneID="kFm-7U-NSC">
             <objects>
                 <tabBarController id="82d-zd-hAJ" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="oze-g9-I2n"/>
+                    <navigationItem key="navigationItem" title="PetHealth" id="oze-g9-I2n">
+                        <barButtonItem key="rightBarButtonItem" title="Logout" image="Logout" id="cxd-R7-7zf">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </barButtonItem>
+                    </navigationItem>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="B4r-Xw-KWR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -474,6 +490,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Back Button" width="20" height="20"/>
+        <image name="Logout" width="20" height="20"/>
         <image name="PetHealthLogo" width="280" height="322"/>
         <image name="placeholder" width="150" height="150"/>
     </resources>
