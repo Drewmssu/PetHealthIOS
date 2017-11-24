@@ -386,7 +386,7 @@
         <!--Pets-->
         <scene sceneID="Khi-pB-O0h">
             <objects>
-                <collectionViewController id="lg7-hz-MSY" sceneMemberID="viewController">
+                <collectionViewController id="lg7-hz-MSY" customClass="PetViewController" customModule="PetHealth" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" dataMode="prototypes" id="HgI-7z-2fi">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -451,6 +451,12 @@
                                     <constraint firstItem="O4h-cV-nx4" firstAttribute="top" secondItem="buR-aF-EEK" secondAttribute="bottom" constant="1" id="wUu-o4-eAr"/>
                                 </constraints>
                                 <size key="customSize" width="350" height="175"/>
+                                <connections>
+                                    <outlet property="descriptionLabel" destination="O4h-cV-nx4" id="yhG-59-yGc"/>
+                                    <outlet property="moreLabel" destination="GNS-EX-F0D" id="U89-CL-mke"/>
+                                    <outlet property="nameLabel" destination="buR-aF-EEK" id="WAb-DM-a9z"/>
+                                    <outlet property="petImageView" destination="Vcb-S2-Vz5" id="Xko-yN-Hkd"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>

@@ -7,8 +7,20 @@
 //
 
 import UIKit
+import AlamofireImage
 
 class PetCell: UICollectionViewCell {
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var moreLabel: UILabel!
+    @IBOutlet weak var petImageView: UIImageView!
     
+    func setValues(fromPet pet: Pet) {
+        nameLabel.text = pet.name
+        descriptionLabel.text = pet.description
+        if let url = URL(string: pet.urlToImage()) {
+            petImageView.af_setImage(withURL: url)
+        }
+    }
     
 }
