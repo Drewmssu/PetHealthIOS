@@ -25,6 +25,7 @@ class PetViewController: UICollectionViewController {
         //self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
 
         // Do any additional setup after loading the view.
+        updatePets()
     }
 
     override func didReceiveMemoryWarning() {
@@ -99,7 +100,23 @@ extension PetViewController {
     }
     
     func updatePets() {
-        
+        Alamofire.request(PetHealthApiService.PET_URL)
+            .responseJSON(completionHandler: {
+                response in
+                switch response.result {
+                case .success(let value):
+                    let json = JSON(value)
+                    print("\(json)")
+                    
+                    self.pets = Pet.from(jsonPets: json["content"].arrayValue)
+                    
+                    self.collectionView?.reloadData()
+                    self.collectionViewLayout.invalidateLayout()
+                    
+                case .failure(let error):
+                    print("(\(error)")
+                }
+            })
 
     }
 }
