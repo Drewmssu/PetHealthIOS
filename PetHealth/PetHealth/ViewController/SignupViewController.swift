@@ -25,6 +25,15 @@ class SignUpViewController: UIViewController {
         }
     }
     
+    @IBAction func showPasswordTouchDown(_ sender: Any) {
+        passwordTextField.isSecureTextEntry = false
+    }
+    
+    @IBAction func showPasswordTouchUpInside(_ sender: Any) {
+        passwordTextField.isSecureTextEntry = true
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

@@ -28,6 +28,15 @@ class LoginViewController: UIViewController {
         self.view.endEditing(true)
     }
     
+    @IBAction func showPasswordTouchDown(_ sender: Any) {
+        passwordTextField.isSecureTextEntry = false
+    }
+    
+    @IBAction func showPasswordTouchUpInside(_ sender: Any) {
+        passwordTextField.isSecureTextEntry = true
+    }
+    
+    
     @IBAction func loginButtonTapped(_ sender: Any) {
         guard let username = usernameTextField.text, !username.isEmpty else { return }
         guard let password = passwordTextField.text, !password.isEmpty else { return }
